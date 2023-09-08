@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_09_02_094536) do
+ActiveRecord::Schema[7.0].define(version: 2023_09_08_094957) do
   create_table "blogs", force: :cascade do |t|
     t.string "title"
     t.text "body"
@@ -31,8 +31,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_02_094536) do
     t.datetime "created_at"
     t.index ["slug", "sluggable_type", "scope"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type_and_scope", unique: true
     t.index ["slug", "sluggable_type"], name: "index_friendly_id_slugs_on_slug_and_sluggable_type"
-    t.index ["sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_id"
-    t.index ["sluggable_type"], name: "index_friendly_id_slugs_on_sluggable_type"
+    t.index ["sluggable_type", "sluggable_id"], name: "index_friendly_id_slugs_on_sluggable_type_and_sluggable_id"
   end
 
   create_table "portfolios", force: :cascade do |t|
@@ -55,13 +54,10 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_02_094536) do
 
   create_table "technologies", force: :cascade do |t|
     t.string "name"
-    t.string "portfolio"
-    t.string "references"
+    t.integer "portfolio_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.integer "portfolio_id"
-    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id", using: :btree
-
+    t.index ["portfolio_id"], name: "index_technologies_on_portfolio_id"
   end
 
   create_table "topics", force: :cascade do |t|
@@ -70,5 +66,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_09_02_094536) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "users", force: :cascade do |t|
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "name"
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  end
+
+  add_foreign_key "blogs", "topics"
   add_foreign_key "technologies", "portfolios"
 end
