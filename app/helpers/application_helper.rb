@@ -16,4 +16,8 @@ module ApplicationHelper
     end
   end
 
+  def copyright_generator
+    MihailaViewTool::Renderer.copyright 'Mihaila Adrian', 'All rights reserved'
+  end
+
 end

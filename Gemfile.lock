@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Adrian-Mihaila/mihaila_view_tool
+  revision: 43c0f8974889230f6a7dffa9869506e3f7e5d387
+  specs:
+    mihaila_view_tool (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -230,8 +236,6 @@ GEM
     stimulus-rails (1.2.2)
       railties (>= 6.0.0)
     stringio (3.0.8)
-    terser (1.1.18)
-      execjs (>= 0.3.0, < 3)
     thor (1.2.2)
     tilt (2.3.0)
     timeout (0.4.0)
@@ -243,8 +247,6 @@ GEM
       concurrent-ruby (~> 1.0)
     tzinfo-data (1.2023.3)
       tzinfo (>= 1.0.0)
-    uglifier (4.2.0)
-      execjs (>= 0.3.0, < 3)
     warden (1.2.9)
       rack (>= 2.0.9)
     web-console (4.2.1)
@@ -277,6 +279,7 @@ DEPENDENCIES
   importmap-rails
   jbuilder
   jquery-rails
+  mihaila_view_tool!
   puma (~> 5.0)
   rails (~> 7.0.6)
   sassc-rails
@@ -284,10 +287,8 @@ DEPENDENCIES
   sprockets-rails
   sqlite3 (~> 1.4)
   stimulus-rails
-  terser
   turbo-rails
   tzinfo-data
-  uglifier
   web-console
   webdrivers
 

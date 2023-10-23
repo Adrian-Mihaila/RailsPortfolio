@@ -77,3 +77,5 @@ gem 'devise', '~> 4.9', '>= 4.9.2'
 gem 'bootstrap'
 gem 'jquery-rails'
 
+gem 'mihaila_view_tool', git: 'https://github.com/Adrian-Mihaila/mihaila_view_tool'
+
