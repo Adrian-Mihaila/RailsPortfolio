@@ -79,3 +79,4 @@ gem 'jquery-rails'
 
 gem 'mihaila_view_tool', git: 'https://github.com/Adrian-Mihaila/mihaila_view_tool'
 
+gem 'petergate', '~> 3.0'
