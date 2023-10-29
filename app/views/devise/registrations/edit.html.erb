@@ -4,7 +4,7 @@
       <div class="col-md-8">
         <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put }) do |f| %>
+        <%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put, class: 'form-padding' }) do |f| %>
           <%= render "devise/shared/error_messages", resource: resource %>
 
           <div class="form-group">
@@ -52,9 +52,11 @@
       </div>
     </div>
 
-    <div class="auth-links">
-      <%= link_to "Back", :back %>
+    <div class="col-md-2"></div>
+    <div class="col-md-10">
+      <div class="auth-links">
+        <%= link_to "Back", :back %>
+      </div>
     </div>
-
   </div>
 </div>
