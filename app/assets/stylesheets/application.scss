@@ -124,6 +124,7 @@ body {
  .card-block {
   color: black;
   text-align: left;
+  padding: 20px;
 }
 
 .auth-links a {
@@ -134,6 +135,12 @@ body {
   text-align: right;
 }
 
-.form-padding {
-  padding: 20px; /* Adjust the amount of padding as needed */
+// .form-padding {
+//   padding: 20px; /* Adjust the amount of padding as needed */
+// }
+
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
 }
