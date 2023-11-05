@@ -80,3 +80,7 @@ gem 'jquery-rails'
 gem 'mihaila_view_tool', git: 'https://github.com/Adrian-Mihaila/mihaila_view_tool'
 
 gem 'petergate', '~> 3.0'
+
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.8'
+
+gem 'kaminari', '~> 1.2', '>= 1.2.2'
