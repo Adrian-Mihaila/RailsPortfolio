@@ -74,7 +74,7 @@ end
 gem 'friendly_id', '~> 5.4.0'
 gem 'devise', '~> 4.9', '>= 4.9.2'
 
-gem 'bootstrap'
+gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'jquery-rails'
 
 gem 'mihaila_view_tool', git: 'https://github.com/Adrian-Mihaila/mihaila_view_tool'
