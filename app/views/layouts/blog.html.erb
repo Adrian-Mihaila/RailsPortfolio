@@ -14,20 +14,6 @@
     <%= stylesheet_link_tag "blogs", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
 
-    <!-- Add the JavaScript code here -->
-    <script>
-      document.addEventListener('turbo:load', () => {
-        const deleteLinks = document.querySelectorAll('.delete-link');
-        deleteLinks.forEach(link => {
-          link.addEventListener('click', (event) => {
-            if (!confirm(link.getAttribute('data-confirm'))) {
-              event.preventDefault();
-            }
-          });
-        });
-      });
-    </script>
-
   </head>
 
   <body>

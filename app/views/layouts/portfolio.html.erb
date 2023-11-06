@@ -12,19 +12,8 @@
     <%= stylesheet_link_tag    'portfolios', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <!-- Add the JavaScript code here -->
-    <script>
-      document.addEventListener('turbo:load', () => {
-        const deleteLinks = document.querySelectorAll('.delete-link');
-        deleteLinks.forEach(link => {
-          link.addEventListener('click', (event) => {
-            if (!confirm(link.getAttribute('data-confirm'))) {
-              event.preventDefault();
-            }
-          });
-        });
-      });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script> 
 
   </head>
 
