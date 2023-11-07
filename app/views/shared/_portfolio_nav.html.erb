@@ -13,12 +13,11 @@
           <li><%= link_to "Contact", contact_path, class: "text-white" %></li>
           <li><%= link_to "Blog", blogs_path, class: "text-white" %></li>
           <li><%= link_to "Portfolio", portfolios_path, class: "text-white" %></li>
-          <% if user_signed_in? %>
+          <% unless current_user.is_a?(GuestUser) %>
             <li><%= login_helper "nav-link btn btn-default btn-sm mt-2 pl-2 pr-2" %></li>
           <% else %>
             <li><%= login_helper "nav-link" %></li>
           <% end %>
-          <% puts "User signed in: #{user_signed_in?}" %>
         </ul>
       </div>
     </div>
