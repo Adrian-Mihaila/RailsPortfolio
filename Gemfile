@@ -5,10 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby "2.5.3"
+ruby "3.1.3"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.0.1'
+gem "rails", "~> 7.0.6"
 # Use postgresql as the database for Active Record
 gem 'pg', '~> 1.5', '>= 1.5.4'
 # Use Puma as the app server
@@ -45,7 +45,7 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console', '>= 3.3.0'
-  gem 'listen', '~> 3.0.5'
+  gem 'listen', '~> 3.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
@@ -58,11 +58,11 @@ gem 'devise', '~> 4.2'
 
 gem 'bootstrap', '~> 4.0.0.alpha6'
 
-gem 'devcamp_view_tool', '~> 0.1.0'
+gem 'mihaila_view_tool', git: 'https://github.com/Adrian-Mihaila/mihaila_view_tool'
 gem 'petergate', '~> 1.7'
 gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.1'
 gem 'kaminari', '~> 1.0', '>= 1.0.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
-gem 'mini_racer'
+gem 'mini_racer', '~> 0.8.0'
 
 
