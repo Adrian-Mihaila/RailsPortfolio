@@ -26,6 +26,8 @@ development:
   database: DevcampPortfolio_development
   username: ruga
   password: 123456789
+  host: localhost
+  # port: 5432
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
