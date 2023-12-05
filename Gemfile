@@ -75,4 +75,10 @@ gem 'therubyracer', platforms: :ruby
 
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
+gem 'carrierwave', '~> 3.0', '>= 3.0.5'
 
+gem 'mini_magick', '~> 4.12'
+
+gem 'carrierwave-aws', '~> 1.6'
+
+gem 'dotenv-rails', '~> 2.8', '>= 2.8.1'
