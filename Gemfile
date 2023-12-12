@@ -75,6 +75,7 @@ gem 'kaminari', '~> 1.2', '>= 1.2.2'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
 
 gem 'therubyracer', platforms: :ruby
+
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 gem 'therubyracer', platforms: :ruby
