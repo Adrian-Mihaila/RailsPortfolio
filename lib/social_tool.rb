@@ -43,7 +43,7 @@ module SocialTool
       x_client = X::Client.new(**x_credentials)
 
       # Example: Change this to your actual search query
-      search_query = "#rubyonrails"
+      search_query = "#coding"
 
       uri = URI.parse("https://api.twitter.com/2/tweets/search/recent?query=#{URI.encode_www_form_component(search_query)}&max_results=6")
       http = Net::HTTP.new(uri.host, uri.port)
