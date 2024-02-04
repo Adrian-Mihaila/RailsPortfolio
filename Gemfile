@@ -49,3 +49,4 @@ gem 'dotenv-rails', '~> 2.8', '>= 2.8.1'
 gem 'cocoon', '~> 1.2', '>= 1.2.15'
 gem 'gritter', '~> 1.2'
 gem "x", "~> 0.14.1"
+gem 'redis', '~> 5.0', '>= 5.0.8'
